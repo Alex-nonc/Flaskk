@@ -1,5 +1,4 @@
 import os
-from queue import Empty
 from flask import Flask, render_template, request, redirect, send_file, url_for
 from werkzeug.utils import secure_filename
 
