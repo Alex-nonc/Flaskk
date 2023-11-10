@@ -10,6 +10,9 @@ finally_uploads = 'finally_uploads/'
 if not os.path.exists(upload_folder):
    os.mkdir(upload_folder)
 
+if not os.path.exists(finally_uploads):
+   os.mkdir(finally_uploads)
+
 app.config['UPLOAD_FOLDER'] = upload_folder
 allowed_extensions = ['mp3', 'wav', 'ogg', 'wma']
 
